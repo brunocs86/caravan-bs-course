@@ -1669,7 +1669,7 @@ a.text-default:hover, a.text-default:focus {
   color: #219287 !important; }
 
 .text-secondary {
-  color: #aa66cc !important; }
+  color: #aa66cc  }
 
 a.text-secondary:hover, a.text-secondary:focus {
   color: #9540bf !important; }
@@ -4785,8 +4785,8 @@ a.waves-effect, a.waves-light {
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15); }
 
 .btn-secondary {
-  background-color: #aa66cc !important;
-  color: #fff !important; }
+  background-color: #aa66cc;
+  color: #fff  }
   .btn-secondary:hover {
     background-color: #b579d2; }
   .btn-secondary:focus, .btn-secondary.focus {
@@ -4809,14 +4809,14 @@ a.waves-effect, a.waves-light {
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15); }
 
 .secondary-ic {
-  color: #aa66cc !important; }
+  color: #aa66cc; }
   .secondary-ic:hover, .secondary-ic:focus {
     color: #aa66cc; }
 
 .btn-outline-secondary {
-  border: 2px solid #aa66cc !important;
-  background-color: transparent !important;
-  color: #aa66cc !important; }
+  border: 2px solid #aa66cc;
+  background-color: transparent;
+  color: #aa66cc; }
   .btn-outline-secondary:hover, .btn-outline-secondary:focus, .btn-outline-secondary:active, .btn-outline-secondary:active:focus, .btn-outline-secondary.active {
     border-color: #aa66cc !important;
     background-color: transparent !important;

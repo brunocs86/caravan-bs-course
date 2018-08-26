@@ -19,6 +19,42 @@
 </head>
 <body>
 
+    <div class="modal fade" id="ModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-notify modal-primary" role="document">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Header-->
+                <div class="modal-header text-center">
+                    <h4 class="modal-title white-text w-100 font-weight-bold py-2">Subscribe</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="white-text">&times;</span>
+                    </button>
+                </div>
+
+                <!--Body-->
+                <div class="modal-body">
+                    <div class="md-form mb-5">
+                        <i class="fa fa-envelope prefix primary-text"></i>
+                        <input type="email" id="form2" class="form-control validate">
+                        <label data-error="wrong" data-success="right" for="form2">Your email</label>
+                    </div>
+
+                    <div class="md-form">
+                        <i class="fa fa-lock prefix primary-text"></i>
+                        <input type="password" id="form3" class="form-control validate">
+                        <label data-error="wrong" data-success="right" for="form3">Your password</label>
+                    </div>
+                </div>
+
+                <!--Footer-->
+                <div class="modal-footer justify-content-center">
+                    <a type="button" class="btn btn-outline-primary waves-effect">Send <i class="fa fa-paper-plane-o ml-1"></i></a>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+
     <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3 box-shadow">
 
         <a class="navbar-brand" href="index.html">
@@ -49,10 +85,10 @@
                     <a class="nav-link" href="contato.html">Contato</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Login</a>
+                    <a class="nav-link" data-toggle="modal" data-target="#ModalForm">Login</a>
                 </li>
                 <li class="nav-item">
-                    <a class="btn btn-outline-primary btn-sm ml-md-2" href="increver.html">Inscreva-se</a>
+                    <a class="btn btn-outline-primary btn-sm ml-md-2">Inscreva-se</a>
                 </li>
             </ul>
         </div>
@@ -160,7 +196,7 @@
                     <div class="d-flex justify-content-center icon-center-style">
                         <img src="img/icones/bagagens.svg" alt="Bagagens">
                     </div>
-                    <h3>Bagagems</h3>
+                    <h3>Bagagens</h3>
                     <p>League of Ipsum dolor sit amet backdoor zoning wolves wards counter jungle dunk bush troll ADC</p>
                 </div>
                 <div class="col-xl-4 col-md-6">
@@ -201,132 +237,196 @@
         </div>
 
         <div class="row justify-content-center">
-            <div class="col-6" id="pergFqt" data-children=".pergunta">
+            <div class="col-8">
 
-                <div class="pergunta">
-                    <a class="lead" href="#pergunta1" data-toggle="collapse" data-parent="#pergFqt" aria-expanded="true" aria-controls="pergunta1">
-                        <i class="fa fa-arrow-right mr-2"></i>É possível cancelar a viagem?
-                    </a>
-                    <div id="pergunta1" class="collapse show" role="tabpanel">
-                        <p>
-                            Overstaying Draven runes CS counter gank 1v1 auto-attack kite solo queue wave ult knockup runes
-                            smurf top ignite red buff split push vision creeps. Counter solo queue leash mid 1v1 skins hue
-                            wolves CC split push split push banana skins chase cooldown mid jungle Draven
-                        </p>
-                    </div>
-                </div>
+                <!--Accordion wrapper-->
+                <div class="accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
 
-                <hr>
-
-                <div class="pergunta">
-                    <a class="lead" href="#pergunta2" data-toggle="collapse" data-parent="#pergFqt" aria-expanded="true" aria-controls="pergunta2">
-                        <i class="fa fa-arrow-right mr-2"></i>Qual a garantia que tenho se perder o voo?
-                    </a>
-                    <div id="pergunta2" class="collapse" role="tabpanel">
-                        <p>
-                            Overstaying Draven runes CS counter gank 1v1 auto-attack kite solo queue wave ult knockup runes
-                            smurf top ignite red buff split push vision creeps. Counter solo queue leash mid 1v1 skins hue
-                            wolves CC split push split push banana skins chase cooldown mid jungle Draven
-                        </p>
-                    </div>
-                </div>
-
-                <hr>
-
-                <div class="pergunta">
-                    <a class="lead" href="#pergunta3" data-toggle="collapse" data-parent="#pergFqt" aria-expanded="true" aria-controls="pergunta3">
-                        <i class="fa fa-arrow-right mr-2"></i>Qual a principal forma de viajar?
-                    </a>
-                    <div id="pergunta3" class="collapse" role="tabpanel">
-                        <p>
-                            Overstaying Draven runes CS counter gank 1v1 auto-attack kite solo queue wave ult knockup runes
-                            smurf top ignite red buff split push vision creeps. Counter solo queue leash mid 1v1 skins hue
-                            wolves CC split push split push banana skins chase cooldown mid jungle Draven
-                        </p>
-                    </div>
-                </div>
-
-                <hr>
-
-                <div class="pergunta">
-                    <a class="lead" href="#pergunta4" data-toggle="collapse" data-parent="#pergFqt" aria-expanded="true" aria-controls="pergunta4">
-                        <i class="fa fa-arrow-right mr-2"></i>Qual o melhor destino de viagem?
-                    </a>
-                    <div id="pergunta4" class="collapse" role="tabpanel">
-                        <p>
-                            Overstaying Draven runes CS counter gank 1v1 auto-attack kite solo queue wave ult knockup runes
-                            smurf top ignite red buff split push vision creeps. Counter solo queue leash mid 1v1 skins hue
-                            wolves CC split push split push banana skins chase cooldown mid jungle Draven
-                        </p>
-                    </div>
-                </div>
-
-                <hr>
-
-                <div class="pergunta">
-                    <a class="lead" href="#pergunta5" data-toggle="collapse" data-parent="#pergFqt" aria-expanded="true" aria-controls="pergunta5]]]]]">
-                        <i class="fa fa-arrow-right mr-2"></i>Vocês dão desconto em grupo grande?
-                    </a>
-                    <div id="pergunta5" class="collapse" role="tabpanel">
-                        <p>
-                            Overstaying Draven runes CS counter gank 1v1 auto-attack kite solo queue wave ult knockup runes
-                            smurf top ignite red buff split push vision creeps. Counter solo queue leash mid 1v1 skins hue
-                            wolves CC split push split push banana skins chase cooldown mid jungle Draven
-                        </p>
-                    </div>
-                </div>
-
-
-<!--                <div class="accordion" id="accordionExample">
+                    <!-- Accordion card -->
                     <div class="card">
-                        <div class="card-header" id="headingOne">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Collapsible Group Item #1
-                                </button>
-                            </h5>
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="headingOne">
+                            <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <h5 class="mb-0">
+                                    É possível cancelar a viagem? <i class="fa fa-angle-down rotate-icon"></i>
+                                </h5>
+                            </a>
                         </div>
 
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <!-- Card body -->
+                        <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordionEx" >
                             <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+                                moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
+                                et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
+                                synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                             </div>
                         </div>
                     </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
                     <div class="card">
-                        <div class="card-header" id="headingTwo">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Collapsible Group Item #2
-                                </button>
-                            </h5>
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="headingTwo">
+                            <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <h5 class="mb-0">
+                                    Qual a garantia que tenho se perder o voo? <i class="fa fa-angle-down rotate-icon"></i>
+                                </h5>
+                            </a>
                         </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+
+                        <!-- Card body -->
+                        <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordionEx" >
                             <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+                                moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
+                                et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
+                                synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                             </div>
                         </div>
                     </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
                     <div class="card">
-                        <div class="card-header" id="headingThree">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Collapsible Group Item #3
-                                </button>
-                            </h5>
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="headingThree">
+                            <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <h5 class="mb-0">
+                                    Qual a principal forma de viajar? <i class="fa fa-angle-down rotate-icon"></i>
+                                </h5>
+                            </a>
                         </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+
+                        <!-- Card body -->
+                        <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordionEx">
                             <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+                                moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
+                                et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
+                                synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                             </div>
                         </div>
                     </div>
-                </div>-->
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="headingFour">
+                            <a class="collapsed" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <h5 class="mb-0">
+                                    Qual o melhor destino de viagem? <i class="fa fa-angle-down rotate-icon"></i>
+                                </h5>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordionEx">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+                                moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
+                                et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
+                                synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                    <!-- Accordion card -->
+                    <div class="card">
+
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="headingFive">
+                            <a class="collapsed" data-toggle="collapse" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                <h5 class="mb-0">
+                                    Vocês dão desconto em grupo grande? <i class="fa fa-angle-down rotate-icon"></i>
+                                </h5>
+                            </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive" data-parent="#accordionEx">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+                                moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
+                                et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
+                                synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion card -->
+
+                </div>
+                <!--/.Accordion wrapper-->
+
+            </div>
+        </div>
+        <div class="text-center my-4">
+            <p class="small m-1">FALE CONOSCO PARA MAIS DÚVIDAS</p>
+            <a class="btn btn-outline-primary btn-lg" href="contato.html">Entre em Contato</a>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white font-weight-bold">
+
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-3">
+                    <h4 class="h6">PÁGINAS</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="planos.html">Planos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="inscricao.html">Inscreva-se</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-3">
+                    <h4 class="h6">LOCAIS</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="california.html">California</a></li>
+                        <li><a href="Paris.html">Paris</a></li>
+                        <li><a href="Dublin.html">Dublin</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-4">
+                    <h4 class="h6">DADOS DE CONTATO</h4>
+                    <ul class="list-unstyled text-secondary">
+                        <li>caravan@caravan.com.br</li>
+                        <li>85 99999-9999</li>
+                        <li>De Seg. à Sex. das 8h às 18h</li>
+                    </ul>
+                </div>
+
+                <div class="col-2">
+                    <h4 class="h6">REDES SOCIAIS</h4>
+                    <ul class="list-unstyled text-secondary">
+                        <li><a class="btn btn-outline-secondary mb-2 btn-sm btn-block" href="#"><i class="fa fa-facebook-square mr-1"></i>Facebook</a></li>
+                        <li><a class="btn btn-outline-secondary mb-2 btn-sm btn-block" href="#"><i class="fa fa-twitter-square mr-1"></i>Twitter</a></li>
+                        <li><a class="btn btn-outline-secondary mb-2 btn-sm btn-block" href="#"><i class="fa fa-youtube-play mr-1"></i>Youtube</a></li>
+                    </ul>
+                </div>
 
             </div>
         </div>
 
-    </section>
+    </footer>
 
 </body>
     <!-- SCRIPTS -->
