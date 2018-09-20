@@ -4814,9 +4814,9 @@ a.waves-effect, a.waves-light {
     color: #aa66cc; }
 
 .btn-outline-secondary {
-  border: 2px solid #aa66cc;
-  background-color: transparent;
-  color: #aa66cc; }
+  border: 2px solid #aa66cc !important;
+  background-color: transparent !important;
+  color: #aa66cc; !important}
   .btn-outline-secondary:hover, .btn-outline-secondary:focus, .btn-outline-secondary:active, .btn-outline-secondary:active:focus, .btn-outline-secondary.active {
     border-color: #aa66cc !important;
     background-color: transparent !important;
