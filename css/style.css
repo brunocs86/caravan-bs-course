@@ -23,9 +23,9 @@ body{
     body{
         padding: 0px;
     }
-    .fixed-top{
+/*    .fixed-top{
         position: relative;
-    }
+    }*/
 }
 
 .modal-notify .modal-header {
