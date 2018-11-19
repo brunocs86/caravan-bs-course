@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Bootstrap - Caravan</title>
+    <meta charset="UTF-8">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <!--Modal-->
+    <div class="modal fade" id="ModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg modal-notify modal-primary" role="document">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Header-->
+                <div class="modal-header bg-light text-center">
+                    <h4 class="modal-title blue-text w-100 font-weight-bold py-2">Acessar</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="white-text">&times;</span>
+                    </button>
+                </div>
+
+                <!--Body-->
+                <div class="modal-body">
+                    <div class="md-form mb-5">
+                        <i class="fa fa-envelope prefix grey-text"></i>
+                        <input type="email" id="form2" class="form-control validate">
+                        <label data-error="wrong" data-success="right" for="form2">Email</label>
+                    </div>
+
+                    <div class="md-form">
+                        <i class="fa fa-lock prefix grey-text"></i>
+                        <input type="password" id="form3" class="form-control validate">
+                        <label data-error="wrong" data-success="right" for="form3">Senha</label>
+                    </div>
+                </div>
+
+                <!--Footer-->
+                <div class="modal-footer bg-light justify-content-center">
+                    <button type="submit" class="btn btn-outline-primary waves-effect">Enviar <i class="fa fa-paper-plane-o ml-1"></i></button><br>
+                    <small class="form-text text-muted"> Esqueceu a senha? <a href="#">CLIQUE AQUI</a></small>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+    <!--Modal end-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-3 box-shadow">
+
+        <a class="navbar-brand" href="index.html">
+            <img src="img/caravan.svg" alt="Caravan">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Locais
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="california.html">California</a>
+                        <a class="dropdown-item" href="paris.html">Paris</a>
+                        <a class="dropdown-item" href="dublin.html">Dubrin</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="planos.html">Planos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contato.html">Contato</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="modal" data-target="#ModalForm">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-primary btn-sm ml-md-2">Inscreva-se</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="container py-5">
+        <div class="my-5 text-center">
+            <span class="h6 d-block">PROGRAME A VIAGEM DO SEU SONHO</span>
+            <h1 class="display-4 text-primary">INSCREVA-SE</h1>
+        </div>
+        <div class="row">
+            <!-- Default form subscription -->
+            <form class="col-6">
+                
+                <div class="row pb-3">
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Nome Completo">
+                            <label for="name">Nome</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="inputCPF" name="cpf" class="form-control" placeholder="000.000.000-00">
+                            <label for="inputCPF">CPF</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="email" id="inputEmail" name="inputEmail" class="form-control" placeholder="email@email.com">
+                            <label for="inputEmail">Email</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="password" id="inputpass" name="pass" class="form-control" placeholder="********">
+                            <label for="inputpass">Senha</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+                    <div class="col-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="inputEndereco" name="endereco" class="form-control">
+                            <label for="inputEndereco">Informe seu endereço</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+                    
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="inputCidade" name="cidade" class="form-control">
+                            <label for="inputCidade">Cidade</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-3 col-6">
+                        <div class="md-form mb-0">
+                            <select class="browser-default custom-select" name="estado">
+                                <option value="1" selected>Estado</option>
+                                <option value="2">Ceará</option>
+                                <option value="3">Pará</option>
+                                <option value="4">Tocantins</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-3 col-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="inputCep" name="cep" class="form-control">
+                            <label for="inputCep">CEP</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <div class="bg-light rounded box-shadow p-3 form-group">
+                    <h2 class="h6 text-primary">FORMA DE PAGAMENTO</h2>
+                    <nav class="nav btn-group mb-3" id="formaPag" role="tablist">
+                        <button type="button" class="btn btn-primary active btn-sm" id="nav-cartao-tab" data-toggle="tab" href="#nav-cartao" role="tab" aria-controls="nav-cartao" aria-selected="true">Cartão de Crédito</button>
+                        <button type="button" class="btn btn-primary btn-sm" id="nav-boleto-tab" data-toggle="tab" href="#nav-boleto" role="tab" aria-controls="nav-boleto" aria-selected="false">Cartão de Crédito</button>
+                    </nav>
+                    <div class="tab-content" id="formaPagConteudo">
+                        <div class="tab-pane fade show active" id="nav-cartao" aria-labelledby="nav-cartao-tab">
+                            Cartão
+                        </div>
+                        <div class="tab-pane fade" id="nav-boleto" aria-labelledby="nav-boleto-tab">
+                            Boleto
+                        </div>
+                    </div>
+                </div>
+                <!-- Sign in button -->
+                <button class="btn btn-info btn-block btn-sm mt-3" type="submit">Inscrever-se</button>                
+            </form>
+            <!-- Default form subscription -->
+        </div>
+    </section>
+  
+
+    <footer class="bg-dark text-white font-weight-bold mt-3">
+
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-3 col-6">
+                    <h4 class="h6">PÁGINAS</h4>
+                    <ul class="list-unstyled">
+                        <li><a class="text-info" href="planos.html">Planos</a></li>
+                        <li><a class="text-info" href="contato.html">Contato</a></li>
+                        <li><a class="text-info" href="inscreva.html">Inscreva-se</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <h4 class="h6">LOCAIS</h4>
+                    <ul class="list-unstyled">
+                        <li><a class="text-info" href="california.html">California</a></li>
+                        <li><a class="text-info" href="paris.html">Paris</a></li>
+                        <li><a class="text-info" href="dublin.html">Dublin</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h4 class="h6">DADOS DE CONTATO</h4>
+                    <ul class="list-unstyled text-secondary">
+                        <li>caravan@caravan.com.br</li>
+                        <li>85 99999-9999</li>
+                        <li>De Seg. à Sex. das 8h às 18h</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2">
+                    <h4 class="h6">REDES SOCIAIS</h4>
+                    <ul class="list-unstyled text-secondary">
+                        <li>
+                            <a class="btn btn-outline-primary mb-2 btn-sm btn-block btn-max-w" href="#">
+                                <i class="fa fa-facebook-square mr-1"></i>Facebook
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn btn-outline-primary mb-2 btn-sm btn-block btn-max-w" href="#">
+                                <i class="fa fa-twitter-square mr-1"></i>Twitter
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn btn-outline-primary mb-2 btn-sm btn-block btn-max-w" href="#">
+                                <i class="fa fa-youtube-play mr-1"></i>Youtube
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bg-primary text-center py-3">
+            <p class="mb-0"> Caravan &copy; 2018. Alguns direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+
+    <!-- Popper -->
+    <script type="text/javascript" src="js/popper.js"></script>
+
+    <!-- Bootstrap -->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+
+    <!-- MDBootstrap -->
+    <script type="text/javascript" src="js/mdb.js"></script>
+
+    <!-- Custom JS -->
+    <script type="text/javascript" src="js/app.js"></script>
+</html>
